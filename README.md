@@ -32,19 +32,13 @@ A responsive and animated landing page that mimics a modern food delivery platfo
 ## 🛠️ Technologies Used
 
 - HTML5
-- CSS3 (with keyframe animations)
-- JavaScript (DOM interactions)
+- CSS
+- JavaScript
 
 ---
 
 ## 📸 Screenshots
-
-
-
----
-
-## 🌐 Video
-
+![websiteimg](https://github.com/user-attachments/assets/0a297218-7314-401d-ac8f-e2f849d3f250)
 
 ---
 
@@ -52,6 +46,7 @@ A responsive and animated landing page that mimics a modern food delivery platfo
 
 - Practice semantic HTML and clean layout
 - Apply modern CSS animation techniques
+
 ---
 
 ## 📄 License
