@@ -1,0 +1,136 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: url('/images/bg.png') no-repeat center center/cover;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo img {
+    height: 50px;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #ff4d4d;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+/* Hero section */
+main section:first-child {
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+main section:first-child img {
+    width: 150px;
+    margin-bottom: 20px;
+    animation: floatLogo 3s infinite ease-in-out;
+}
+
+main section:first-child p {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+main section:first-child input {
+    padding: 12px 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+main section:first-child input:focus {
+    box-shadow: 0 0 10px #ff4d4d;
+}
+
+/* Info section */
+main section:nth-child(2) {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    animation: slideUp 1.2s ease;
+}
+
+main section:nth-child(2) h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffcccb;
+}
+
+main section:nth-child(2) p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes floatLogo {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
